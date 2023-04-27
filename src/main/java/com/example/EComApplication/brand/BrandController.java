@@ -68,7 +68,10 @@ public class BrandController
   ///// get all brands which category present in brand
 	
     @GetMapping("/getcategory_id/{id}")
-    public ResponseEntity<List<Brand>> getBrandByCategoryId(@PathVariable long id,long s )
+
+
+    public ResponseEntity<List<Brand>> getBrandByCategoryId(@PathVariable long id,long s,String salary)
+
     {
     	try
     	{
